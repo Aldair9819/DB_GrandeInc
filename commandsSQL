@@ -1,0 +1,16 @@
+CREATE TABLE gastos (
+    id SERIAL PRIMARY KEY,
+    nombre_compra varchar(50),
+    cantidad float,
+    metodo_pago varchar(20),
+    fecha DATE,
+	hora TIME
+);
+
+SELECT * FROM gastos;
+
+INSERT INTO gastos (nombre_compra, cantidad, metodo_pago, fecha, hora) VALUES ('Oxxo comida', 214.10, 'EFECTIVO', '2024-01-08', '04:05:06')
+
+DELETE FROM gastos where id = 1
+
+UPDATE gastos SET id = 1 where id = 2
